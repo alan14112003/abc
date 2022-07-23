@@ -31,7 +31,7 @@ function getBtn(value) {
             result = a;
         check = true;
         phep = '';
-        a = result; b = '';
+        a = result.toString(); b = '';
         result = 0;
         screen.value = a;
     } else if (value === 'x') {
@@ -47,7 +47,6 @@ function getBtn(value) {
         } else {
             screen.value = screen.value.slice(0, screen.value.length - 1);
             a = a.slice(0, a.length - 1);
-            result = Number(result.toString().slice(0, result.toString().length - 1));
         }
 
     } else if (value === 'AC') {
